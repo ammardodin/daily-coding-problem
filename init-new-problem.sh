@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eiop
+set -e
 
 DIR="$(date +%d-%m-%Y)"	
 mkdir $DIR
