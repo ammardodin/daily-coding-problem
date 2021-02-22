@@ -8,6 +8,10 @@ sum[2] = max(sum[0] + arr[2], sum[1])
 ...
 sum[i] = max(sum[i-2] + arr[i], sum[i-1])
 """
+
+"""
+About exponential complexity since the recurrence is approx T(n) = T(n-2) + T(n-1) + C
+"""
 def max_non_adjacent_sum(arr, i):
     if not arr:
         return 0
@@ -17,6 +21,9 @@ def max_non_adjacent_sum(arr, i):
         return max(arr[0], arr[1])
     return max(max_non_adjacent_sum(arr, i - 2) + arr[i], max_non_adjacent_sum(arr, i - 1))
 
+"""
+linear space and time
+"""
 def max_non_adjacent_sum_dp(arr):
     n = len(arr)
     if n == 0:
