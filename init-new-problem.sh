@@ -2,7 +2,7 @@
 
 set -e
 
-DIR="$(date +%d-%m-%Y)"	
+DIR="$(date +%Y-%m-%d)"	
 mkdir $DIR
 touch "$DIR/problem.md"
 touch "$DIR/solution.py"
