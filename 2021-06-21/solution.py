@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
-from typing import List
-
 
 class ListNode:
     def __init__(self, value, next=None) -> None:
         self.value = value
         self.next = next
-        
+
 def serialize_list(head):
     itr = head
     digits = []
